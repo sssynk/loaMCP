@@ -43,4 +43,4 @@ def get_user(user_name: str):
     return response.json()
 
 if __name__ == "__main__":
-    mcp.run(transport="sse", host="0.0.0.0", port=6622)
+    mcp.run(transport="streamable-http", host="0.0.0.0", port=6622, path="/mcp")
