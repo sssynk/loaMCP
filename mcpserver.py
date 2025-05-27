@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 mcp = FastMCP("Library of Aletheia")
+mcp.settings.stateless_http = True
 
 @mcp.tool()
 def search_books(search_term: str):
